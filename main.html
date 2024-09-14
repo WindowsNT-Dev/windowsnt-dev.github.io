@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Lite</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: linear-gradient(90deg, #1e90ff, #00bfff);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            color: #1e90ff;
+            font-size: 2rem;
+            border-bottom: 2px solid #1e90ff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .features, .downloads {
+            margin-top: 1rem;
+        }
+        .features ul, .downloads ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .features ul li, .downloads ul li {
+            margin-bottom: 1rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #1e90ff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            border-color: #004494;
+        }
+        .button:active {
+            background-color: #003d7a;
+        }
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+        }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .license {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #e1e1e1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Windows Lite</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#install">Installation Guide</a></li>
+                <li><a href="#license">License</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="features">
+            <h2>Features</h2>
+            <div class="features">
+                <h3>Optimized Performance</h3>
+                <ul>
+                    <li><strong>Lightweight Design:</strong> Enjoy faster boot times and smoother performance with a minimalistic interface.</li>
+                    <li><strong>Reduced Resource Usage:</strong> Windows Lite uses fewer system resources, making it perfect for older hardware or systems with limited resources.</li>
+                </ul>
+                <h3>Minimal Bloatware</h3>
+                <ul>
+                    <li><strong>Clean Installation:</strong> Out-of-the-box experience without unnecessary apps and services.</li>
+                    <li><strong>Customizable:</strong> Easily add or remove features based on your needs.</li>
+                </ul>
+                <h3>Compatibility</h3>
+                <ul>
+                    <li><strong>Windows 11 for x64:</strong> Experience the latest features and updates in a more efficient package.</li>
+                    <li><strong>Windows 10 for 32-bit Systems:</strong> Ideal for older hardware, delivering essential features without the bloat.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="download">
+            <h2>Download</h2>
+            <div class="downloads">
+                <h3>Windows Lite for x64 Systems</h3>
+                <ul>
+                    <li><strong>Version:</strong> 11.x.x</li>
+                    <li><strong>Size:</strong> 4.5 GB</li>
+                    <li><a href="/downloads/windows-lite-x64.iso" class="button">Download Now</a></li>
+                </ul>
+                <h3>Windows Lite for 32-bit Systems</h3>
+                <ul>
+                    <li><strong>Version:</strong> 10.x.x</li>
+                    <li><strong>Size:</strong> 3.2 GB</li>
+                    <li><a href="/downloads/windows-lite-32bit.iso" class="button">Download Now</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="install">
+            <h2>Installation Guide</h2>
+            <p>Follow these steps to install Windows Lite:</p>
+            <ol>
+                <li><strong>Download the ISO File:</strong> Choose the version that matches your system from the download section above.</li>
+                <li><strong>Create Installation Media:</strong> Use tools like Rufus or the Windows Media Creation Tool to create a bootable USB drive or DVD.</li>
+                <li><strong>Install Windows Lite:</strong> Boot from the installation media and follow the on-screen instructions to complete the installation.</li>
+            </ol>
+        </section>
+
+        <section id="license">
+            <h2>License</h2>
+            <p>Windows Lite is licensed under the MIT License. See below for the full license text:</p>
+            <div class="license">
+                <h3>MIT License</h3>
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+                <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 WindowsNT-Dev. All rights reserved.</p>
+            <p>This software is licensed under the MIT License.</p>
+        </div>
+    </footer>
+</body>
+</html>
