@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Windows Lite offers a lightweight and optimized version of Windows for both x64 and 32-bit systems, featuring improved performance and minimal bloatware.">
     <title>Windows Lite</title>
     <style>
         body {
@@ -90,6 +91,10 @@
         .button:active {
             background-color: #003d7a;
         }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
         footer {
             background-color: #1e90ff;
             color: white;
@@ -100,14 +105,31 @@
             width: 100%;
             box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
         }
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
         .license {
             margin-top: 1rem;
             font-size: 0.9rem;
             color: #e1e1e1;
+        }
+        .back-to-top {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #1e90ff;
+            text-decoration: none;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            transition: background-color 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .back-to-top:hover {
+            background-color: #0056b3;
+            border-color: #004494;
+        }
+        .back-to-top:active {
+            background-color: #003d7a;
         }
     </style>
 </head>
@@ -151,15 +173,15 @@
             <div class="downloads">
                 <h3>Windows Lite for x64 Systems</h3>
                 <ul>
-                    <li><strong>Version:</strong> 11.x.x</li>
+                    <li><strong>Version:</strong> Zenith Zephyr</li>
                     <li><strong>Size:</strong> 4.5 GB</li>
                     <li><a href="/downloads/windows-lite-x64.iso" class="button">Download Now</a></li>
                 </ul>
                 <h3>Windows Lite for 32-bit Systems</h3>
                 <ul>
-                    <li><strong>Version:</strong> 10.x.x</li>
+                    <li><strong>Version:</strong> Not Available</li>
                     <li><strong>Size:</strong> 3.2 GB</li>
-                    <li><a href="/downloads/windows-lite-32bit.iso" class="button">Download Now</a></li>
+                    <li><em>Download not available</em></li>
                 </ul>
             </div>
         </section>
@@ -186,11 +208,19 @@
         </section>
     </div>
 
+    <a href="#" class="back-to-top" onclick="scrollToTop()">Back to Top</a>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 WindowsNT-Dev. All rights reserved.</p>
             <p>This software is licensed under the MIT License.</p>
         </div>
     </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
